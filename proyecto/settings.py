@@ -77,8 +77,8 @@ WSGI_APPLICATION = 'proyecto.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'db_projecto',
-        'USER': 'postgres',
+        'NAME': 'DBprojectoDjango',
+        'USER': 'admin',
         'PASSWORD': '123456',
         'HOST': '127.0.0.1',
         'PORT': '5435',
@@ -128,7 +128,7 @@ STATICFILES_DIRS = [
     '/var/www/static/'
 ]
 
-MEDIA_ROOT =  os.path.join(BASE_DIR, 'media')
+MEDIA_ROOT =  (BASE_DIR / 'media')
 MEDIA_URL = '/media/'
 
 LOGIN_REDIRECT_URL = '/'
